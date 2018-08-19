@@ -1,0 +1,20 @@
+version: '3.3'
+services:
+    web:
+        build:
+            context: ./
+            dockerfile: web.dockerfile
+        volumes:
+            - ../app/:/var/www
+        ports:
+            - 8080:80
+        links:
+            - app
+        container_name: web-container
+    app:
+        build:
+            context: ./
+            dockerfile: app.dockerfile
+        volumes:
+            - ../app/:/var/www
+        container_name: app-container
