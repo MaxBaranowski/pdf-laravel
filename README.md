@@ -1,2 +1,2 @@
-# pdf-laravel
-merge/slice/adding content to pdf
+# CV Generator 🤟🏻
+Application was deployed on [Heroku](https://pdf-mbar-dev.herokuapp.com/).
